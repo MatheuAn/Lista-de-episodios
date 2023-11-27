@@ -1,5 +1,5 @@
   :root{
-    --destaque: orange;
+    --destaque: var(--linkB);
     --secundcor: #182335;
    --terccor: #141D2C;
    --quarcor: #1D2C42;
@@ -9,7 +9,11 @@
    --fontcor2: #6B7584
   }
   
- 
+ #mobile-menu,
+  #header{
+    border:2px solid yellow;
+  display:none}
+  
   
   body{
     color:var(--fontcor);
