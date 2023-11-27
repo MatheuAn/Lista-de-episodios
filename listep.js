@@ -1,10 +1,3 @@
-
-
-lista.forEach(item => {
-  if (item.image === "") {
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
   var listaEpisodios = document.getElementById('listaEpisodios');
   var quantidadeLi = listaEpisodios.getElementsByTagName('li').length;
