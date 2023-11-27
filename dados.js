@@ -1,3 +1,5 @@
+lista.forEach(item => {
+  if (item.image === "") {
     item.image = imagemPadrao;
   }
 });
