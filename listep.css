@@ -9,10 +9,6 @@
    --fontcor2: #6B7584
   }
   
- #mobile-menu,
-  #header{
-  display:none}
-  
   
   body{
     color:var(--fontcor);
