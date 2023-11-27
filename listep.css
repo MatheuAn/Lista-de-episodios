@@ -1,0 +1,435 @@
+  :root{
+    --destaque: orange;
+    --secundcor: #182335;
+   --terccor: #141D2C;
+   --quarcor: #1D2C42;
+   --quintcor: #323248;
+   --sextcor: #000018;
+   --fontcor: white;
+   --fontcor2: #6B7584
+  }
+  
+ 
+  
+  body{
+    color:var(--fontcor);
+    background:var(--sextcor);
+    
+  }
+    #listanimesep {
+      border-radius:20px;
+      padding:0;
+      position:relative;
+      overflow:hidden;
+      border:2px solid var(--secundcor);
+      padding-top:55px;
+      font-family: Pathway Extreme, sans-serif;
+    }
+    .listepanime{
+      display:;
+      padding:0;
+      margin:0;
+      overflow:auto;
+      height:300px;
+     
+    }
+    
+    .listepanime::-webkit-scrollbar{
+      background: var(--terccor);
+    }
+     .listepanime::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    .listepanime::-webkit-scrollbar-thumb {
+    background-color: var(--destaque);
+}
+
+    
+    .listepanime li{
+      height:100px;
+      width:100%;
+      background:var(--terccor);
+      display:flex;
+      cursor:pointer;
+      position: relative;
+    }
+
+    
+    
+    .listepanime li img{
+      width:100%;
+      height:100%;
+      object-fit: cover
+    }
+    
+    .listepanime li span:nth-child(1){
+      width:40%;
+      position: relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+      .listepanime li span:nth-child(1)::before{
+        content:"\e037";
+        font-family: material symbols outlined;
+        border:2px solid var(--fontcor);
+        width:30px;
+        height:30px;
+        display:flex; align-items:center;
+        justify-content:center;
+        position: absolute;
+        z-index:1;
+        border-radius:50%;
+        font-size:25px;
+      }
+
+      
+      .infoeppp{
+        margin-left:10px;
+        margin-top:auto;
+        width:70%;
+        text-decoration: none;
+        color:var(--fontcor);
+      }
+      
+      .infoeppp h6,
+      .infoeppp h2{
+        margin:0; 
+        padding:0;
+      }
+      
+      .infoeppp h2{
+        font-size:18px;
+      }
+      .infoeppp h2::before{
+        content:"Episódio";
+        margin-right:5px;
+      }
+      
+      
+      
+      
+      .infoeppp h6{
+        opacity:0.6;
+        margin-top:5px;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      
+      .listepanime li div{
+        display:flex;
+        gap:10px;
+        
+      }
+      
+      .listepanime li div h3:nth-child(-n+2){
+        padding:5px 10px;
+        border-radius: 100px;
+        background:rgba(255,255,255,0.1)!important;
+        font-size:10px;
+        display:flex; align-items:center;
+      }
+      .listepanime li.assistido div h3:nth-child(-n+2){
+      	background:rgba(255,255,255,0.2)!important;
+      }
+            .listepanime li.assistido {
+      background: var(--sextcor);
+      border-top:1px solid var(--quarcor);
+      border-bottom:1px solid var(--quarcor);
+    }
+     .listepanime li.assistido span:nth-child(1)::before {
+       background: var(--destaque);
+       border:2px solid var(--destaque);
+       color:black;
+     }
+     
+     .listepanime li.assistido h2{
+       color: var(--destaque);
+     }
+     .listepanime li.assistido div h3{
+       background: var(--quintcor);
+       color: var(--fontcor);
+     }
+      .listepanime li.assistido div h3:nth-child(3)::after {
+        content: "Assistido";
+        
+      }
+      .listepanime li.assistido div h3:nth-child(3)::before {
+        content: "\e2e6";
+      }
+          .listepanime li.assistido span:nth-child(1)::after {
+            content:"";
+            position:absolute;
+            top:0; 
+            left:0;
+            width:100%;
+            height:100%;
+            opacity:0.7;
+            background:var(--sextcor);
+            filter: saturate(2);
+          }
+      
+
+        .listepanime li div h3:nth-child(2)::before {
+          content: "\e425";
+          margin-right: 10px;
+          font-family: material symbols outlined;
+        }
+      .listepanime li div h3:nth-child(3){
+        position:absolute;
+        top:-5%;
+        left:2%;
+        padding:2px 5px;
+        background: var(--destaque);
+        color:black;
+        font-weight:900;
+        border-radius:2px;
+        font-size:10px;
+        display:flex; align-items:center;
+      }
+      
+      .listepanime li.assistido div h3:nth-child(3){
+      	background: none!important;
+      	border:2px solid var(--destaque);
+      	color:var(--destaque);
+      }
+      
+      .listepanime li div h3:nth-child(3)::before{
+        content:"\e055";
+        font-size:13px;
+        font-family: material symbols outlined;
+        margin-right:5px;
+      }
+      .listepanime li div h3:nth-child(3)::after{
+        content:"FullHD";
+      }
+      
+      .filtereppp{
+        display:flex;
+        justify-content:space-between;
+        position:absolute;
+        top:0%;
+        left:0;
+        width:calc(100% - 30px);
+        margin-left:0%;
+        background:var(--secundcor);
+        padding:10px 15px;
+        gap:10px
+      }
+      
+    
+      .filtereppp span:nth-child(1){
+        width:100%;
+      }
+      .filtereppp span{
+        background: var(--quarcor);
+        padding:5px 10px;
+        display:flex;
+        align-items:center;
+        border-radius:150px;
+        box-shadow: 2px 0 20px 1px rgba(0,0,0,0.3);
+        cursor:pointer;
+      }
+      .filtereppp span input{
+        outline: none;
+        border:none;
+        background:none;
+        color:var(--fontcor);
+        font-size:13px;
+        width:60%;
+      
+      font-family: Pathway Extreme, sans-serif;
+      }
+      
+      .filtereppp .pesquisareppp::before{
+        content:"\f02f";
+        font-size:22px;
+        margin-right:10px;
+        font-family: material symbols outlined;
+      }
+          
+            
+      .filtereppp span input::placeholder{
+        color: var(--fontcor) ;
+      }
+      
+      .material-symbols-outlined::before {
+      content: "\e053"; 
+      font-family: material symbols outlined;
+    }
+
+    .material-symbols-outlined.reverse::before {
+      content: "\eae2"; 
+    }
+    
+    .material-symbols-outlined.noreverse::before{
+     content: "\eadd"; 
+    }
+    #episodesCount{
+      opacity:0.6;
+      margin-left:auto;
+    }
+    	#episodesCount::after {
+    		content: "Eps";
+    		margin-left: 5px;
+    	}
+    #imgeppp,#nameobraeppp,#categoryeppp,#timeeppp{display:block;}
+
+#listorderep{
+  color:var(--fontcor2);
+}
+#listorderep:active{
+  color:var(--destaque);
+  opacity:1;
+}
+
+@media screen and (min-width: 768px){
+	
+	.filtereppp{
+		height:60px;
+		background:none;
+	}
+	
+	.filtereppp span{
+		height:30px;
+		padding:5px 20px;
+	}
+	
+	.filtereppp span:nth-child(1){
+		width:60%;
+	}
+	.filtereppp span input{
+		font-size:20px;
+	}
+		.filtereppp span::before{
+			font-size:25px!important;
+		}
+	#listorderep{
+		color:var(--fontcor);
+	}
+	.filtereppp span input,
+	  #episodesCount {
+	  	font-size:13px;
+	  }
+	#episodesCount::after{
+		content:"Episódios Totais";
+		margin-left:10px;
+	}
+	  #listanimesep {
+	  	padding-top: 80px;
+	  }
+	  
+  .listepanime{
+  	display:grid;
+  	grid-template-columns: repeat(3,1fr);
+  	gap:20px;
+  	overflow:unset;
+  	height:unset;
+  	margin-bottom:10px;
+  	width:96%;
+  	margin-left:2%;
+  }
+ 
+  
+  .listepanime li{
+  	height:150px;
+  	border-radius:10px;
+  	overflow:hidden;
+  }
+  
+  .listepanime li span{
+  	position:absolute!important;
+  	min-width:100%;
+  	height:100%;
+  	left:0;
+  }
+  .listepanime li span img{
+  	width:100%;
+  }
+  
+  .infoeppp{
+  	z-index:2!important;
+  	width:92%;
+  	left:;
+  }
+  .infoe {
+  	display:flex;
+  	margin:0;
+  }
+  .infoeppp h6{
+  	order:2;
+  	margin-left:10px;
+  	opacity:1;
+  	 -webkit-line-clamp: 1;
+  }
+  .infoeppp h2{
+  	display:flex;
+  	margin-left:5px;
+  	font-weight:900;
+  	font-family: Montserrat, sans-serif;
+  }
+  .infoeppp h2::before {
+  	display:none;
+  }
+  
+  .infoeppp div h3{
+  	font-size:8px!important;
+  	padding:3px 8px!important;
+  	border-radius:10px!important;
+  	height:15px;
+  	margin:5px 0 5px 0;
+  }
+  .infoeppp div h3:nth-child(-n+2){
+  	background: rgba(255,255,255,0.2)!important;
+  }
+  .infoeppp div h3:nth-child(3){
+  	order:1;
+  	position:relative!important;
+  	
+  }
+  .infoeppp div h3:nth-child(1){
+  	order:2;
+  }
+  .infoeppp div h3:nth-child(2){
+  	order:3;
+  }
+  .listepanime li.assistido div h3:nth-child(3){
+  	background: transparent;
+  	border:2px solid var(--destaque);
+  	color:var(--destaque) !important;
+  	
+  }
+  .listepanime li.assistido div h3:nth-child(3)::after {
+  	content: "Ep Assistido";
+  }
+  .listepanime li.assistido .infoeppp h2::before {
+    	display: flex;
+    	transition: display 0.3s ease;
+    }
+  .listepanime li.assistido .infoeppp h6 {
+  	opacity:0.6;
+  	transition: opacity 0.3s ease;
+  }
+   .listepanime li.assistido img{
+   	opacity:0.6;
+   }
+  
+
+}
+
+@media screen and (min-width:1000px){
+	
+	#listanimesep{
+		width:80%;
+		margin-left:10%;
+	}
+	.infoeppp div h3 {
+		font-size: 10px!important;
+	}
+  .listepanime li.assistido div h3:nth-child(3)::after {
+  	content: "Episódio Assistido";
+  }
+}
