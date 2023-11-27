@@ -1,33 +1,3 @@
-// Imagem padrão dos episódios
-const imagemPadrao = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_m4me6O3VTWs1TvWzzcaNvT15vSdDlP8BA&usqp=CAU";
-
-const lista = [
-
-	{
-		image: "/Páginas blogger/Lista de episódios /imgs/boruto.gif",
-		titulo: "Boruto: Naruto Next Generations",
-		link: "",
-		episodio: "22",
-		idioma: "Legendado",
-		time: "24 min"
-  },
-	{
-		image: "/Páginas blogger/Lista de episódios /imgs/boruto2.gif",
-		titulo: "Boruto: Naruto Next Generations",
-		link: "",
-		episodio: "02",
-		idioma: "Legendado",
-		time: "24 min"
-  },
-	{
-		image: "/Páginas blogger/Lista de episódios /imgs/boruto3.gif",
-		titulo: "Boruto: Naruto Next Generations",
-		link: "",
-		episodio: "03",
-		idioma: "Legendado",
-		time: "24 min"
-  }
-];
 
 
 lista.forEach(item => {
