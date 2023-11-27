@@ -7,7 +7,7 @@ const lista = [
 		image: "/Páginas blogger/Lista de episódios /imgs/boruto.gif",
 		titulo: "Boruto: Naruto Next Generations",
 		link: "",
-		episodio: "01",
+		episodio: "22",
 		idioma: "Legendado",
 		time: "24 min"
   },
