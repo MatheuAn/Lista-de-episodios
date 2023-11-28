@@ -12,7 +12,7 @@
   
   body{
     color:var(--fontcor);
-    background:var(--sextcor);
+    background:transparent;
     
   }
     #listanimesep {
